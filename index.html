@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Erevrast Home Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="erevrast_icon.png" type="image/icon">
+		<link type="text/css" rel="stylesheet" href="erevrast.css">
+		<style>
+			#top {
+			  background: url(text/dumbledore.gif) right no-repeat, url(text/gandalf.gif) left no-repeat, url(text/tenor.gif) center;
+			}
+			
+			h1 {
+			  border: 2px solid black;
+			  text-align: center;
+			  color: white;
+			  width: 45%;
+			  margin: auto;
+			  text-shadow: 2px 3px black;
+			  padding: 20px 0px 20px 0px;
+			}
+			
+			.isometric {
+			  float: left;
+			  margin: 30px 0px 0px 150px;
+			  border: 1px solid white;
+			  text-align: center;
+			  color: #99aab5;
+			  width: 82%;
+			  text-shadow: 1px 2px black;
+			  border: 1px solid gray;
+			}
+			
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+			
+			.column {
+			  margin-left: 20px;
+			  margin-top: 20px;
+			  float: left;
+			  border: 1px solid white;
+			  text-align: center;
+			  color: #99aab5;
+			  width: 40%;
+			  text-shadow: 1px 2px black;
+			}
+		</style>
+	</head>
+	
+	<body>
+	<!-- lefthand navigation bar -->
+	<div class="sidenav">
+		<a href="#top" title="Click to jump to the top of the page">Jump to Top</a>
+		<br>
+		<a href="#info" title="Check out specs and other info about the server">Server Info</a>
+		<br>
+		<a href="#about" title="Read about what we do">About</a>
+		<br>
+		<a href="#mods" title="Read up on the mods we have installed">Mods</a>
+		<br>
+		<a href="#isometric" title="Jump to the isometric view of the entire server world">Isometric Render</a>
+	</div>
+	<!-- end of lefthand navigation bar -->
+	
+	<!-- button ribbon -->
+	<div id="wrapper"><div id="top">
+		<img src="text/welcome.png" alt="Welcome to the Erevrast Home Page!" style="margin-top:25px;" title="You are viewing the home page">
+	</div></div>
+	<div id="button-ribbon">
+		  <a class="button" style="margin:5px 13px 0px 0px; background-color:#005918;" title="You are viewing the home page"><img src="text/home-button.png" alt="Home"></a>
+		  <a class="button" style="margin:5px 13px 0px 0px;" title="Click to view the lore page" href="lore/lore.html"><img src="text/lore-button.png" alt="Lore"></a>
+		  <a class="button" style="margin:5px 13px 0px 0px;" title="Click to view the planning page" href="planning/planning.html"><img src="text/planning-button.png" alt="Planning"></a>
+		  <a class="button" style="margin:5px 13px 0px 0px;" title="Click to view the building logs" href="logs/logs.html"><img src="text/logs-button.png" alt="Logs"></a>
+		  <a class="button" style="margin:5px 0px 0px 0px;" title="Click to view other documentation related to the server" href="documentation/documentation.html"><img src="text/documentation-button.png" alt="Documentation"></a>
+	</div>
+	<!-- end of button ribbon -->
+	
+	<!-- content -->
+	<div id="row">
+		<div class="column" style="margin-left: 150px;"><br>
+
+		<!-- server info -->
+		<h1 style="background:url(text/info.jpg) bottom;" id="info">Server Info</h1>
+			<h2>
+			IP: www.magical64.com<br>
+			Version: 1.16.5<br>
+			</h2><br>
+		
+		<!-- mods -->
+			<h1 style="background:url(text/mods.gif) center;" id="mods">Mods</h1>
+		
+		</div>
+		<div class="column"><br>
+		
+			<!-- about -->
+			<h1 style="background:url(text/kargeth.jpg) center;" id="about">About</h1>
+			
+		</div>
+	</div>
+	<!-- isometric map -->
+	<h2 id="isometric" class="isometric">Here is a zoomable isometric render of the entire server.<br>Use the left-hand navigation bar to go back up.</h2>
+	<embed type="text/html" src="erevrast-isometric/index.html" style="margin: 30px 0px 0px 150px; width: 82%; height: 500px;">
+	<!-- end of content -->
+	</body>
+</html>
